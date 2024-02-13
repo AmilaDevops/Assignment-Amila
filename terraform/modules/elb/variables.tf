@@ -32,3 +32,9 @@ variable "default_action_type" {
 variable "target_group_name" {
     type = string
 }
+variable "target_id" {
+    type = string
+}
+
+
+

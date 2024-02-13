@@ -75,4 +75,5 @@ module "elb" {
   certificate_arn = module.acm.certificate_arn
   default_action_type = "forward"
   target_group_name = "production-public-alb-tg"
+  target_id = "${module.ec2.ids}"
 }
