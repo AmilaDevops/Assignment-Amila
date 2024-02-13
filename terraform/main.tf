@@ -46,6 +46,7 @@ module "ec2" {
   environment = "production"
   key_name    = module.ssh_key_pair.key_pair_key_name
   depends_on = [module.aws-ec2-securitygroups]
+  
 }
 
 module "acm" {
